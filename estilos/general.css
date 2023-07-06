@@ -1,3 +1,7 @@
+html{
+    background-color: #000;
+}
+
 header{
     justify-content: center;
     align-items: center;
@@ -5,6 +9,10 @@ header{
     width: 100vw;
     height: min(25vh,30vw);
     background-color: #000;
+}
+
+P{
+    text-align: center;
 }
 
 header div{
@@ -16,14 +24,38 @@ header div{
 }
 
 .seccion-1{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: min(4.5vh,5.5vw);
     width: 100vw;
     height: 45vh;
-    background-color: #b70000;
-    color: #04003b;
+    background-color: #b00000;
+    color: #fff;
+    text-shadow: 0 0 1vw #008EF5, 0 0 1.5vw #008EF5, 0 0 2.5vw #008EF5, 0 0 4vw #008EF5;
 }
 
 img{
     max-width: 100%;
     max-height: 100%;
     height: fit-content;
+}
+
+.negro_separador{
+    background-color: #000;
+    height: 3vh;
+    width: 100vw;
+}
+
+.neon_separador{
+    height: 1vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.neon_texto{
+    font-size: min(8vw,7vh);
+    color: #ffffff;
+    text-shadow: 0 0 0.5vw #E10CE8, 0 0 1vw #E10CE8, 0 0 2vw #E10CE8, 0 0 0.5vw #E10CE8, 0 0 1vw #E10CE8, 0 0 2vw #E10CE8, 0 0 4vw #E10CE8;
 }
