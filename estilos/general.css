@@ -1,5 +1,13 @@
+:root{
+    --color_1: #000;
+    --color_2: #fff;
+    --color_3: #b00;
+    --color_4: #008EF5;
+    --color_5: #E10CE8;
+}
+
 html{
-    background-color: #000;
+    background-color: var(--color_1);
 }
 
 header{
@@ -8,7 +16,7 @@ header{
     display: flex;
     width: 100vw;
     height: min(25vh,30vw);
-    background-color: #000;
+    background-color: var(--color_1);
 }
 
 P{
@@ -28,12 +36,36 @@ header div{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    font-size: min(5vh,6vw);
+    width: 100vw;
+    height: min(45vh,90vw);
+    background-color: var(--color_3);
+    color: var(--color_2);
+    text-shadow: 0 0 1vw var(--color_4), 0 0 1.5vw var(--color_4), 0 0 2.5vw var(--color_4), 0 0 4vw var(--color_4);
+}
+.seccion-2{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     font-size: min(4.5vh,5.5vw);
     width: 100vw;
     height: 45vh;
-    background-color: #b00000;
-    color: #fff;
-    text-shadow: 0 0 1vw #008EF5, 0 0 1.5vw #008EF5, 0 0 2.5vw #008EF5, 0 0 4vw #008EF5;
+    background-color: var(--color_1);
+    color: var(--color_2);
+    text-shadow: 0 0 1vw var(--color_4), 0 0 1.5vw var(--color_4), 0 0 2.5vw var(--color_4), 0 0 4vw var(--color_4);
+}
+.seccion-3{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: min(4.5vh,5.5vw);
+    width: 100vw;
+    height: 45vh;
+    background-color: var(--color_3);
+    color: var(--color_2);
+    text-shadow: 0 0 1vw var(--color_4), 0 0 1.5vw var(--color_4), 0 0 2.5vw var(--color_4), 0 0 4vw var(--color_4);
 }
 
 img{
@@ -43,7 +75,7 @@ img{
 }
 
 .negro_separador{
-    background-color: #000;
+    background-color: var(--color_1);
     height: 3vh;
     width: 100vw;
 }
@@ -53,12 +85,12 @@ img{
     z-index: 0;
     height: 0.4vh;
     width: 100vw;
-    background-color: #fff;
-    box-shadow: 0 0.2vh 1vh 0.5vh #008EF5;
+    background-color: var(--color_2);
+    box-shadow: 0 0.2vh 1vh 0.5vh var(--color_4);
 }
 
 .neon_texto{
     font-size: min(8vw,7vh);
-    color: #ffffff;
-    text-shadow: 0 0 0.5vw #E10CE8, 0 0 1vw #E10CE8, 0 0 2vw #E10CE8, 0 0 0.5vw #E10CE8, 0 0 1vw #E10CE8, 0 0 2vw #E10CE8, 0 0 4vw #E10CE8;
+    color: var(--color_2);
+    text-shadow: 0 0 0.5vw var(--color_5), 0 0 1vw var(--color_5), 0 0 2vw var(--color_5), 0 0 0.5vw var(--color_5), 0 0 1vw var(--color_5), 0 0 2vw var(--color_5), 0 0 4vw var(--color_5);
 }
