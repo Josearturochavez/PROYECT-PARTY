@@ -49,9 +49,12 @@ img{
 }
 
 .neon_separador{
-    height: 1vh;
+    position: sticky;
+    z-index: 0;
+    height: 0.4vh;
     width: 100vw;
     background-color: #fff;
+    box-shadow: 0 0.2vh 1vh 0.5vh #008EF5;
 }
 
 .neon_texto{
