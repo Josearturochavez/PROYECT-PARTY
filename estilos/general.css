@@ -37,7 +37,7 @@ header div{
     align-items: center;
     justify-content: space-evenly;
     font-size: min(5vh,6vw);
-    width: 100vw;
+    width: 100%;
     height: min(45vh,90vw);
     background-color: var(--color_3);
     color: var(--color_2);
@@ -49,23 +49,28 @@ header div{
     align-items: center;
     justify-content: space-evenly;
     font-size: min(4.5vh,5.5vw);
-    width: 100vw;
-    height: 45vh;
+    width: 100%;
+    height: min(45vh,90vw);
     background-color: var(--color_1);
     color: var(--color_2);
-    text-shadow: 0 0 1vw var(--color_4), 0 0 1.5vw var(--color_4), 0 0 2.5vw var(--color_4), 0 0 4vw var(--color_4);
+    text-shadow: 0 0 1vw var(--color_4), 0 0 3vw var(--color_4);
 }
 .seccion-3{
+    width: 100%;
+    height: min(45vh,90vw);
+    background-color: var(--color_3);
+}
+
+footer{
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: min(4.5vh,5.5vw);
-    width: 100vw;
-    height: 45vh;
-    background-color: var(--color_3);
+    width: 100%;
+    height: min(22.5vh,45vw);
+    background-color: var(--color_1);
     color: var(--color_2);
-    text-shadow: 0 0 1vw var(--color_4), 0 0 1.5vw var(--color_4), 0 0 2.5vw var(--color_4), 0 0 4vw var(--color_4);
 }
 
 img{
@@ -84,7 +89,7 @@ img{
     position: sticky;
     z-index: 0;
     height: 0.4vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--color_2);
     box-shadow: 0 0.2vh 1vh 0.5vh var(--color_4);
 }
