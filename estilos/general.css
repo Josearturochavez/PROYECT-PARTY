@@ -50,14 +50,14 @@ header div{
     justify-content: space-evenly;
     font-size: min(4.5vh,5.5vw);
     width: 100%;
-    height: min(45vh,90vw);
+    height: min(30vh,60vw);
     background-color: var(--color_1);
     color: var(--color_2);
     text-shadow: 0 0 1vw var(--color_4), 0 0 3vw var(--color_4);
 }
-.seccion-3{
+.seccion-direccion{
     width: 100%;
-    height: min(45vh,90vw);
+    height: min(60vh,120vw);
     background-color: var(--color_3);
 }
 
