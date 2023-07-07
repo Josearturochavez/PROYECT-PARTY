@@ -68,7 +68,7 @@ footer{
     justify-content: space-evenly;
     font-size: min(4.5vh,5.5vw);
     width: 100%;
-    height: min(22.5vh,45vw);
+    height: min(30vh,60vw);
     background-color: var(--color_1);
     color: var(--color_2);
 }
