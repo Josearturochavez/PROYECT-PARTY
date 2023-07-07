@@ -57,7 +57,7 @@ header div{
 }
 .seccion-direccion{
     width: 100%;
-    height: min(60vh,120vw);
+    height: 100vh;
     background-color: var(--color_3);
 }
 
