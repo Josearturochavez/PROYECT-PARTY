@@ -1,7 +1,7 @@
 :root{
     --color_1: #000;
     --color_2: #fff;
-    --color_3: #b00;
+    --color_3: #700;
     --color_4: #008EF5;
     --color_5: #8c00ff;
 }
@@ -63,9 +63,9 @@ header div{
     flex-direction: column;
     display: flex;
     justify-content: center;
-    font-size: min(4.5vh,5.5vw);
+    font-size: min(4vh,6vw);
     width: 100vw;
-    height: min(60vh,120vw);
+    height: min(60vh,110vw);
     background-color: var(--color_1);
     color: var(--color_2);
     text-shadow: 0 0 1vw var(--color_4), 0 0 3vw var(--color_4);
@@ -81,10 +81,15 @@ header div{
 
 .seccion-2 .div1{
     height: 45%;
-    padding: 6% 0 0;
+    padding: min(2vh,4vw) 0 0;
 }
+
+.seccion-2 .div1 p{
+    width: 100%;
+}
+
 .seccion-2 .div2{
-    padding: 0 0 3%;
+    padding: 0 0 min(3vh,5vw);
     height: 55%;
 }
 
@@ -168,7 +173,7 @@ footer{
 }
 
 .neon_texto{
-    font-size: min(8vw,7vh);
+    font-size: min(8.5vw,5.7vh);
     color: var(--color_2);
     text-shadow: 0 0 0.5vw var(--color_5), 0 0 1vw var(--color_5), 0 0 2vw var(--color_5), 0 0 0.5vw var(--color_5), 0 0 1vw var(--color_5), 0 0 2vw var(--color_5), 0 0 4vw var(--color_5);
 }
