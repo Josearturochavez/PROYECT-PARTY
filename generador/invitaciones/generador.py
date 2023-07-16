@@ -2,26 +2,21 @@
 datos_correctos = False
 
 while datos_correctos == False:    
+    
+    with open('../data.txt', encoding="utf8") as datatxt:
+        data = datatxt.read().split("\n")
+        datatxt.close()
+        print("el nombre del proyecto es: "+data[0])
+        print("la fecha del proyecto es: "+data[1])
+        print("la hora del proyecto es: "+data[2])
+        print("el lugar del proyecto es: "+ data[3])
+        print("la ubicacion del lugar es: "+ data[4])
+        print("la url de el lugar es: " + data[5])
 
-    with open('../invitados.txt') as invitadostxt:
+    with open('../invitados.txt', encoding="utf8") as invitadostxt:
         invitados = invitadostxt.read().split("\n")
-        print("\n\n\nla lista de invitados es: -> " + str(invitados))
         invitadostxt.close()
-
-    with open('../projectname.txt') as proyectotxt:
-        proyecto = proyectotxt.read()
-        print("\nel nombre de el proyecto es: -> " + str(proyecto))
-        proyectotxt.close()
-
-    with open('../time-date.txt') as time_datetxt:
-        time_date = time_datetxt.read().split("\n")
-        print("\nla hora y fecha del proyecto es: -> " + str(time_date))
-        time_datetxt.close()
-        
-    with open('../urlmaps.txt') as urlmapstxt:
-        urlmaps = urlmapstxt.read()
-        print("\nel codigo url de la ubicacion es: -> " + str(urlmaps))
-        urlmapstxt.close()
+        print("\n\n\nla lista de invitados es: -> " + str(invitados))
         
     print("\n\nlos datos son correctos? si=1 no=0")
     aux =  int(input("-> "))
@@ -40,10 +35,15 @@ for i in invitados:
     print(invitados[n])
     doc_name = invitados[n] + ".html"
     
-    #se tiene que modificar el code
-    
-    print(code)
+    new_code = code.replace("?NAME?", invitados[n])
+    new_code = new_code.replace("?PROJECT?", data[0])
+    new_code = new_code.replace("?DATE?", data[1])
+    new_code = new_code.replace("?TIME?", data[2])
+    new_code = new_code.replace("?PLACE?", data[3])
+    new_code = new_code.replace("?ADDRESS?", data[4])
+    new_code = new_code.replace("?URL?", data[5])
+
     with open(doc_name, "w", encoding="utf8") as invitacion:
-        invitacion.write(code)
+        invitacion.write(new_code)
     
     n += 1
